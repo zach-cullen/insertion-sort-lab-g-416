@@ -4,6 +4,7 @@ function findMinAndRemove(array){
   for (let i = 0; i < array.length; i++) {
     if (array[i] < newMin) {
       newMin = array[i]
+      minIndex = i
     }
   }
   array.splice(minIndex, 1)
